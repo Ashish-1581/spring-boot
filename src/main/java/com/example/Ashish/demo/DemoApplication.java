@@ -7,8 +7,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class DemoApplication implements CommandLineRunner {
+//	@Autowired
+//	apple obj;
 	@Autowired
-	apple obj;
+	DBService db;
 	public static void main(String[] args)   {
 		SpringApplication.run(DemoApplication.class, args);
 
@@ -17,7 +19,9 @@ public class DemoApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
+		System.out.println(db.getData());
 
-		obj.display();
+//		obj.display();
+
 	}
 }

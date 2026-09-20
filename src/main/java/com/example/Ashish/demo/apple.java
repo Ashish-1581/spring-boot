@@ -3,7 +3,7 @@ package com.example.Ashish.demo;
 import jakarta.annotation.PostConstruct;
 import jakarta.annotation.PreDestroy;
 import org.springframework.stereotype.Component;
-@Component  //this annotaion inform spring that the class should be managed as a bean.
+//@Component  //this annotaion inform spring that the class should be managed as a bean.
 public class apple {
 
     public void display() {
